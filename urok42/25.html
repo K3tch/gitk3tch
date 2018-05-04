@@ -20,11 +20,14 @@
 	<li>текст</li><li>текст</li>
 </ol>
 </div>
+</div>	
+	<div id="block2">
+	</div>	
                 <script>
 $(document).ready(function(){
 $('#block1').click(
 function(){
-$(this).effect('blind', 500);
+$(this).effect('transfer', {to: '#block2'}, 1000);
 	return false;
 	}
 	)
